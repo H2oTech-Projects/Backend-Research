@@ -55,23 +55,18 @@ MIDDLEWARE = [
 ]
 
 REST_FRAMEWORK = {
-    
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        
+    'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
-    
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
 }
+
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=3),   # Adjust token lifespan
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=2),
-    'ROTATE_REFRESH_TOKENS': True,                   # Rotate tokens upon refresh
-    'BLACKLIST_AFTER_ROTATION': True,                # Invalidate old refresh tokens
-    'UPDATE_LAST_LOGIN': True,                       # Update last login on successful login
-    'ALGORITHM': 'HS256',                            # Set the token algorithm
-    'SIGNING_KEY': SECRET_KEY,                # Define a signing key
-    'AUTH_HEADER_TYPES': ('Bearer',),                # Specify auth header type
-    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'BLACKLIST_AFTER_ROTATION': True,
 }
 
 ROOT_URLCONF = 'Backend.urls'
