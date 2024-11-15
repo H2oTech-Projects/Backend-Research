@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ReasearchConfig(AppConfig):
+class ResearchConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Reasearch'
+    name = 'Reaearch'
