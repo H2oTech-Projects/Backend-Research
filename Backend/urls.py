@@ -1,5 +1,6 @@
+
 """
-URL configuration for Backend project.
+URL configuration for JWTAuth project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,7 +17,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Research.views import RegisterSerializer,RegisterView,LoginView,LogoutView, DashboardView
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/auth/register/',RegisterView.as_view(), name="auth_register"),
+    path('api/auth/login/',LoginView.as_view(), name="auth_login"),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/dashboard/', DashboardView.as_view(), name='dashboard'),
+    path('api/logout/', LogoutView.as_view(), name='logout'),
 ]
