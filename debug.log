@@ -1,0 +1,102 @@
+INFO 2024-11-19 12:36:08,825 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:36:45,364 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 12:36:47,405 log Not Found: /
+WARNING 2024-11-19 12:36:47,406 basehttp "GET / HTTP/1.1" 404 2306
+WARNING 2024-11-19 12:36:54,834 log Not Found: /logs/
+WARNING 2024-11-19 12:36:54,835 basehttp "GET /logs/ HTTP/1.1" 404 3245
+INFO 2024-11-19 12:37:06,275 basehttp "GET /logs/info HTTP/1.1" 301 0
+INFO 2024-11-19 12:37:06,283 views Info level log message: info_view called.
+INFO 2024-11-19 12:37:06,285 basehttp "GET /logs/info/ HTTP/1.1" 200 30
+WARNING 2024-11-19 12:37:48,031 log Not Found: /logs/
+WARNING 2024-11-19 12:37:48,031 basehttp "GET /logs/ HTTP/1.1" 404 3245
+DEBUG 2024-11-19 12:37:53,107 views Debug level log message: debug_view called.
+INFO 2024-11-19 12:37:53,108 basehttp "GET /logs/debug/ HTTP/1.1" 200 31
+WARNING 2024-11-19 12:38:15,786 log Not Found: /logs/
+WARNING 2024-11-19 12:38:15,786 basehttp "GET /logs/ HTTP/1.1" 404 3245
+INFO 2024-11-19 12:38:32,923 basehttp "GET /logs/warning HTTP/1.1" 301 0
+WARNING 2024-11-19 12:38:32,929 views Warning level log message: warning_view called.
+INFO 2024-11-19 12:38:32,931 basehttp "GET /logs/warning/ HTTP/1.1" 200 33
+WARNING 2024-11-19 12:38:52,141 log Not Found: /logs/
+WARNING 2024-11-19 12:38:52,142 basehttp "GET /logs/ HTTP/1.1" 404 3245
+INFO 2024-11-19 12:38:58,229 basehttp "GET /logs/error HTTP/1.1" 301 0
+ERROR 2024-11-19 12:38:58,232 views Error level log message: error_view called.
+INFO 2024-11-19 12:38:58,233 basehttp "GET /logs/error/ HTTP/1.1" 200 31
+INFO 2024-11-19 12:40:24,745 autoreload E:\BackendResearch\Backend\Research\models.py changed, reloading.
+INFO 2024-11-19 12:40:26,287 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:41:57,313 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 12:42:03,426 log Not Found: /
+WARNING 2024-11-19 12:42:03,426 basehttp "GET / HTTP/1.1" 404 2306
+INFO 2024-11-19 12:42:13,144 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2024-11-19 12:42:13,168 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-11-19 12:42:13,375 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-11-19 12:42:13,643 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-11-19 12:42:13,723 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-11-19 12:42:13,775 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-11-19 12:42:13,777 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-11-19 12:42:13,779 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-11-19 12:42:13,802 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-11-19 12:42:13,848 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-11-19 12:42:29,172 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-11-19 12:42:29,223 basehttp "GET /admin/ HTTP/1.1" 200 6689
+INFO 2024-11-19 12:42:29,267 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-11-19 12:42:29,289 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-11-19 12:42:29,291 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-11-19 12:42:42,840 basehttp "GET /admin/Research/school/add/ HTTP/1.1" 200 8584
+INFO 2024-11-19 12:42:42,925 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2024-11-19 12:42:42,926 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-11-19 12:42:42,984 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-11-19 12:42:42,990 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2024-11-19 12:42:42,993 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 12:42:43,059 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-11-19 12:42:43,096 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-11-19 12:42:43,100 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2024-11-19 12:42:43,107 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-11-19 12:42:43,151 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2024-11-19 12:42:43,223 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-11-19 12:42:43,264 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-11-19 12:42:43,368 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-11-19 12:42:51,585 basehttp "POST /admin/Research/school/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 12:42:51,738 basehttp "GET /admin/Research/school/ HTTP/1.1" 200 9292
+INFO 2024-11-19 12:42:51,777 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 12:42:51,787 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2024-11-19 12:42:51,805 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-11-19 12:42:51,849 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-11-19 12:42:51,850 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-11-19 12:46:10,403 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
+INFO 2024-11-19 12:46:11,538 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:46:40,101 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:47:16,871 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
+INFO 2024-11-19 12:47:18,015 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:48:43,508 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-19 12:48:44,610 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:50:18,366 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-11-19 12:50:19,487 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:50:30,708 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-11-19 12:50:31,820 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:50:43,237 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-19 12:50:44,368 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:51:01,056 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-19 12:51:02,350 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 12:51:10,598 log Not Found: /
+WARNING 2024-11-19 12:51:10,598 basehttp "GET / HTTP/1.1" 404 2306
+INFO 2024-11-19 13:30:34,984 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:34:44,645 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
+INFO 2024-11-19 17:15:58,217 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:16:10,101 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:16:22,201 basehttp "GET /admin/ HTTP/1.1" 200 7067
+INFO 2024-11-19 17:18:10,563 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-19 17:18:14,376 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:18:49,151 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-11-19 17:18:52,921 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:18:57,051 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-11-19 17:18:59,686 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 17:19:17,801 log Not Found: /error_view/
+WARNING 2024-11-19 17:19:17,803 basehttp "GET /error_view/ HTTP/1.1" 404 2357
+ERROR 2024-11-19 17:19:24,834 views An error occurred: division by zero
+INFO 2024-11-19 17:19:24,840 basehttp "GET /logs/error_view/ HTTP/1.1" 200 25
+INFO 2024-11-19 17:27:16,042 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-19 17:27:19,450 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:27:32,092 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-19 17:27:36,683 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:52:40,417 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
+INFO 2024-11-19 18:01:50,088 autoreload Watching for file changes with StatReloader

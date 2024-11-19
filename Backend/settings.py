@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -124,6 +124,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # Don't disable Django's default loggers
@@ -143,21 +144,27 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'verbose',
         },
-        'file': {
+        'error_file': {  # Renamed to avoid ambiguity
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'errors.log'),
+            'formatter': 'verbose',
+        },
+        'debug_file': {  # Renamed to avoid ambiguity
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'debug.log',
+            'filename': os.path.join(BASE_DIR, 'debug.log'),
             'formatter': 'verbose',
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file'],
+            'handlers': ['console','debug_file', 'error_file'],  # Use correct handler names
             'level': 'INFO',
             'propagate': True,
         },
-        'logs.views': {  # Custom logger for the 'logs' app
-            'handlers': ['console', 'file'],
+        'logs.views': {  # Custom logger for your views
+            'handlers': ['console', 'debug_file'],  # Use correct handler names
             'level': 'DEBUG',
             'propagate': False,
         },
