@@ -1,9 +1,9 @@
 from django.shortcuts import render
 import logging
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.http import HttpResponse, Http404
 
-# Get a logger for this module
+'''# Get a logger for this module
 logger = logging.getLogger('logs.views')
 
 def info_view(request):
@@ -55,4 +55,19 @@ def my_view(request):
         cursor.execute("SELECT * FROM myapp_mymodel WHERE name=%s", ['example'])
         logger.info(f"Query executed: {cursor.query}")
     return HttpResponse("SQL query logged!")
-    return HttpResponse('Check console or logs for SQL queries.')
+    return HttpResponse('Check console or logs for SQL queries.')'''
+
+
+import logging
+
+# Create a logger instance
+logger = logging.getLogger('django')
+
+def my_view(request):
+    try:
+        logger.debug('Entering my_view function')  # Debug log
+        result = 10 / 0  # Intentional error
+        return JsonResponse({'message': 'Success'})
+    except Exception as e:
+        logger.error(f'Error encountered: {e}', exc_info=True)  # Error log with traceback
+        return JsonResponse({'error': 'Something went wrong'}, status=500)

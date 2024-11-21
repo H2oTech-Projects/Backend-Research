@@ -124,7 +124,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+'''BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # Don't disable Django's default loggers
@@ -177,5 +177,51 @@ LOGGING = {
             'level': 'DEBUG',  # Log all SQL queries
             'propagate': False,
         },
+    },
+}'''
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message} {pathname}:{lineno}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'error_file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'error.log'),
+            'formatter': 'verbose',
+        },
+        'debug_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'debug.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'error_file', 'debug_file'],  # Add the new debug handler
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django.utils.autoreload': {  # Logger specifically for autoreload
+            'handlers': ['console'],
+            'level': 'INFO',  # Suppress DEBUG-level logs
+            'propagate': False,
+        }
     },
 }
