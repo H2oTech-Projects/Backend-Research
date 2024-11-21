@@ -44,3 +44,15 @@ def error_view(request):
     except Exception as e:
         logger.error("An error occurred: %s", str(e))  # Log the error
         return HttpResponse("Error logged to error.log")
+
+
+from django.db import connection
+
+logger = logging.getLogger('django.db.backends')
+
+def my_view(request):
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT * FROM myapp_mymodel WHERE name=%s", ['example'])
+        logger.info(f"Query executed: {cursor.query}")
+    return HttpResponse("SQL query logged!")
+    return HttpResponse('Check console or logs for SQL queries.')

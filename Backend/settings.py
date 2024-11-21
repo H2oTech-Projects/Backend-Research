@@ -156,6 +156,10 @@ LOGGING = {
             'filename': os.path.join(BASE_DIR, 'debug.log'),
             'formatter': 'verbose',
         },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'sql_queries.log',
+        },
     },
     'loggers': {
         'django': {
@@ -166,6 +170,11 @@ LOGGING = {
         'logs.views': {  # Custom logger for your views
             'handlers': ['console', 'debug_file'],  # Use correct handler names
             'level': 'DEBUG',
+            'propagate': False,
+        },
+        'django.db.backends': {
+            'handlers': ['console', 'file'],  # Log to console and file
+            'level': 'DEBUG',  # Log all SQL queries
             'propagate': False,
         },
     },

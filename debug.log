@@ -100,3 +100,6 @@ INFO 2024-11-19 17:27:32,092 autoreload E:\BackendResearch\Backend\Research\view
 INFO 2024-11-19 17:27:36,683 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 17:52:40,417 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
 INFO 2024-11-19 18:01:50,088 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:07:59,202 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:09:06,146 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-11-20 10:09:11,327 autoreload Watching for file changes with StatReloader
