@@ -1,6 +1,12 @@
 from django.urls import path
-from . import views
+from rest_framework.routers import DefaultRouter
+from .views import AuthorViewSet
 
-urlpatterns = [
-    path('authors/', views.author_list, name='author-list'),
-]
+router = DefaultRouter()
+router.register(r'authors', AuthorViewSet, basename='author')
+
+urlpatterns = router.urls
+
+
+
+'''path('authors/', AuthorListCreateView.as_view(), name='author-list-create'),'''
