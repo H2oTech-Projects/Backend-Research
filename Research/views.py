@@ -7,6 +7,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated, BasePermission
 from django.contrib.auth.models import User
 from rest_framework import viewsets
+from .permissions import IsAuthor
 
 '''class AuthorListCreateView(APIView):
     def get(self, request):
@@ -27,12 +28,15 @@ class AuthorViewSet(ModelViewSet):
     serializer_class = AuthorSerializer
 
 class BookViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated, IsAuthor]
     serializer_class = BookSerializer
 
     def get_queryset(self):
-        # Get the 'author_pk' from the URL
         author_id = self.kwargs.get('author_pk')
         if author_id:
             # Filter books based on the 'author_id' in the URL
             return Book.objects.filter(author_id=author_id)
         return Book.objects.all()
+    
+    def perform_create(self, serializer):# Associate the current logged-in user as the author when creating a book
+        serializer.save(author=self.request.user)
