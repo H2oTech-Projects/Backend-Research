@@ -1,9 +1,12 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import Author
-from .serializers import AuthorSerializer
+from .models import Author, Book
+from .serializers import AuthorSerializer, BookSerializer
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.permissions import IsAuthenticated, BasePermission
+from django.contrib.auth.models import User
+from rest_framework import viewsets
 
 '''class AuthorListCreateView(APIView):
     def get(self, request):
@@ -22,3 +25,14 @@ from rest_framework.viewsets import ModelViewSet
 class AuthorViewSet(ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
+
+class BookViewSet(viewsets.ModelViewSet):
+    serializer_class = BookSerializer
+
+    def get_queryset(self):
+        # Get the 'author_pk' from the URL
+        author_id = self.kwargs.get('author_pk')
+        if author_id:
+            # Filter books based on the 'author_id' in the URL
+            return Book.objects.filter(author_id=author_id)
+        return Book.objects.all()
