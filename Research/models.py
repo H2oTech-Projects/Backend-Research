@@ -14,3 +14,11 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+class Publisher(models.Model):
+    name = models.CharField(max_length=100)
+    location = models.CharField(max_length=100)
+    established_year = models.IntegerField()
+
+    def __str__(self):
+        return self.name
