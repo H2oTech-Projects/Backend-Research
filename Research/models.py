@@ -22,3 +22,18 @@ class Publisher(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Product(models.Model):
+    name = models.CharField(max_length=20)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+class Order(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField()
+
+    def __str__(self):
+        return str(self.product)
+

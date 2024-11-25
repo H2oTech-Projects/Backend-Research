@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Author, Book, Publisher
+from .models import Author, Book, Publisher, Product, Order
 
 class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,3 +15,15 @@ class PublisherSerializer(serializers.ModelSerializer):
     class Meta:
         model = Publisher
         fields = '__all__'
+
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = '__all__'
+
+class ProductSerializer(serializers.ModelSerializer):
+      orders = OrderSerializer(many=True, read_only=True)
+      class Meta:
+        model = Product
+        fields = '__all__'
+        
