@@ -8,6 +8,7 @@ from rest_framework.permissions import IsAuthenticated, BasePermission
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 #from .permissions import IsAuthor
+from rest_framework.decorators import action
 
 '''class AuthorListCreateView(APIView):
     def get(self, request):
@@ -38,8 +39,18 @@ class BookViewSet(viewsets.ModelViewSet):
             return Book.objects.filter(author_id=author_id)
         return Book.objects.all()
     
-    def perform_create(self, serializer):# Associate the current logged-in user as the author when creating a book
-        serializer.save(author=self.request.user)
+    @action(detail=True)
+    def publisher(self, request, pk=None):
+        """
+        Returns the publisher of a specific book.
+        """
+        book = self.get_object()  # Fetch the book object by primary key (pk)
+        publisher = book.publisher  # Get the publisher of the book
+        publisher_serializer = PublisherSerializer(publisher)  # Serialize the publisher
+        return Response(publisher_serializer.data)  # Return the serialized publisher data
+    
+    '''def perform_create(self, serializer):# Associate the current logged-in user as the author when creating a book
+        serializer.save(author=self.request.user)'''
 
 class PublisherViewSet(ModelViewSet):
     queryset = Publisher.objects.all()
