@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'Research',
     'rest_framework',
     'django_celery_results',
-    'django_celery_beat'
+    'django_celery_beat',
+    'send_mail'
 ]
 
 MIDDLEWARE = [
