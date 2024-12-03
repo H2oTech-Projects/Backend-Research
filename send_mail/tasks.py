@@ -11,8 +11,10 @@ def send_mail_task(self):
     users = get_user_model().objects.all()
     #timezone.localtime(users.date_time)
     for user in users:
-        mail_subject = "celery testing"
-        message = "hi i am indira kasichhwa"
+        mail_subject = "celery Testing"
+
+
+        message = "hi i am indira"
         to_email = user.email
         send_mail(
             subject = mail_subject,

@@ -17,10 +17,10 @@ def send_mail_to_all(request):
 
 
 def schedule_mail(request):
-    schedule, created = CrontabSchedule.objects.get_or_create(hour=8, minute=45)
+    schedule, created = CrontabSchedule.objects.get_or_create(hour=13, minute=52)
     task = PeriodicTask.objects.create(
         crontab=schedule,
-        name="schedule_mail_task_"+"1",
+        name="schedule_mail_task_"+"10",
         task='send_mail.tasks.send_mail_task',
        # args=json.dumps([2, 3])
     )
