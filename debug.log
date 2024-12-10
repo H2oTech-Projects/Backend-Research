@@ -1,0 +1,235 @@
+INFO 2024-12-10 09:44:04,009 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:44:06,229 basehttp "GET / HTTP/1.1" 200 12068
+WARNING 2024-12-10 09:44:06,653 log Not Found: /favicon.ico
+WARNING 2024-12-10 09:44:06,653 basehttp "GET /favicon.ico HTTP/1.1" 404 2209
+INFO 2024-12-10 09:44:09,705 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2024-12-10 09:44:09,723 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:44:09,948 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-10 09:44:10,382 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-12-10 09:44:10,403 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-12-10 09:44:10,415 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-12-10 09:44:10,419 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-12-10 09:44:10,454 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-12-10 09:44:10,460 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-12-10 09:44:10,553 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-12-10 09:44:14,001 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:44:14,053 basehttp "GET /admin/ HTTP/1.1" 200 6697
+INFO 2024-12-10 09:44:14,100 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-12-10 09:44:14,128 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-12-10 09:44:14,129 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-12-10 09:44:17,382 basehttp "GET /admin/Research/account/add/ HTTP/1.1" 200 9211
+INFO 2024-12-10 09:44:17,515 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2024-12-10 09:44:17,516 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2024-12-10 09:44:17,518 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:44:17,520 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-12-10 09:44:17,526 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-12-10 09:44:17,583 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-12-10 09:44:17,584 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-12-10 09:44:17,635 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-12-10 09:44:17,650 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2024-12-10 09:44:17,652 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-12-10 09:44:17,666 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2024-12-10 09:44:17,739 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-10 09:44:17,867 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-12-10 09:44:25,565 basehttp "POST /admin/Research/account/add/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:44:25,586 basehttp "GET /admin/Research/account/add/ HTTP/1.1" 200 9448
+INFO 2024-12-10 09:44:25,635 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:44:25,707 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-12-10 09:44:32,635 basehttp "POST /admin/Research/account/add/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:44:32,658 basehttp "GET /admin/Research/account/add/ HTTP/1.1" 200 9449
+INFO 2024-12-10 09:44:32,693 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:44:40,347 basehttp "POST /admin/Research/account/add/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:44:40,500 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9841
+INFO 2024-12-10 09:44:40,555 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:44:40,556 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2024-12-10 09:44:40,595 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-12-10 09:44:40,648 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-12-10 09:46:18,786 autoreload E:\BackendResearch\Backend\Backend\urls.py changed, reloading.
+INFO 2024-12-10 09:46:20,277 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-10 09:46:31,030 log Not Found: /
+WARNING 2024-12-10 09:46:31,031 basehttp "GET / HTTP/1.1" 404 2429
+INFO 2024-12-10 09:46:43,196 basehttp "GET /update-balance/ HTTP/1.1" 200 29
+INFO 2024-12-10 09:46:54,092 basehttp "GET /admin/ HTTP/1.1" 200 7774
+INFO 2024-12-10 09:46:57,049 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 09:46:57,098 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:46:58,767 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 09:46:58,815 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-10 09:47:28,900 log Not Found: /
+WARNING 2024-12-10 09:47:28,901 basehttp "GET / HTTP/1.1" 404 2429
+INFO 2024-12-10 09:47:35,317 basehttp "GET /update-balance/ HTTP/1.1" 200 29
+INFO 2024-12-10 09:47:38,058 basehttp "GET /update-balance/ HTTP/1.1" 200 29
+INFO 2024-12-10 09:47:44,101 basehttp "GET /admin/ HTTP/1.1" 200 7774
+INFO 2024-12-10 09:47:45,945 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 09:47:45,987 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:47:47,371 basehttp "GET /admin/Research/account/3/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 09:47:47,414 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:47:50,980 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 09:47:52,406 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 09:47:52,451 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:48:04,133 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:48:05,239 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-10 09:48:24,558 log Not Found: /
+WARNING 2024-12-10 09:48:24,560 basehttp "GET / HTTP/1.1" 404 2429
+ERROR 2024-12-10 09:48:29,914 log Internal Server Error: /update-balance/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 5, in update_balance
+    account = Account.objects.second()
+              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Manager' object has no attribute 'second'
+ERROR 2024-12-10 09:48:29,921 basehttp "GET /update-balance/ HTTP/1.1" 500 66959
+INFO 2024-12-10 09:48:51,922 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:48:53,158 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:48:53,759 basehttp "GET /update-balance/ HTTP/1.1" 200 29
+INFO 2024-12-10 09:50:42,864 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:50:44,826 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:50:52,239 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:50:54,009 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:51:11,595 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:51:12,933 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:51:23,007 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 09:51:24,074 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:52:20,976 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 09:52:22,308 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:52:56,759 basehttp "GET //admin HTTP/1.1" 301 0
+INFO 2024-12-10 09:52:56,859 basehttp "GET /admin/ HTTP/1.1" 200 7774
+INFO 2024-12-10 09:52:59,030 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 09:52:59,082 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:53:01,427 basehttp "GET /admin/ HTTP/1.1" 200 7774
+INFO 2024-12-10 09:53:02,471 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9455
+INFO 2024-12-10 09:53:02,521 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-10 09:53:11,157 log Not Found: /
+WARNING 2024-12-10 09:53:11,158 basehttp "GET / HTTP/1.1" 404 2433
+INFO 2024-12-10 09:53:20,860 basehttp "GET /transfer-balance/ HTTP/1.1" 200 33
+INFO 2024-12-10 09:53:46,739 basehttp "GET /admin/ HTTP/1.1" 200 7774
+INFO 2024-12-10 09:53:48,342 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 09:53:48,393 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:53:55,032 basehttp "GET /admin/ HTTP/1.1" 200 7774
+INFO 2024-12-10 09:53:56,861 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9455
+INFO 2024-12-10 09:53:56,917 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:55:53,845 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:55:55,038 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:55:58,550 basehttp "GET /transfer-balance/ HTTP/1.1" 200 33
+INFO 2024-12-10 09:56:01,763 basehttp "GET /transfer-balance/ HTTP/1.1" 200 33
+INFO 2024-12-10 09:56:12,338 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 09:56:12,383 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:56:13,564 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9452
+INFO 2024-12-10 09:56:13,607 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:59:17,140 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 09:59:18,340 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 09:59:29,936 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:59:30,050 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9844
+INFO 2024-12-10 09:59:30,095 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:59:32,997 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9455
+INFO 2024-12-10 09:59:33,039 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 09:59:38,708 basehttp "POST /admin/Research/account/2/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 09:59:38,733 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9845
+INFO 2024-12-10 09:59:38,779 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:00:26,347 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 10:00:27,385 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-10 10:00:36,132 log Not Found: /
+WARNING 2024-12-10 10:00:36,133 basehttp "GET / HTTP/1.1" 404 2730
+INFO 2024-12-10 10:00:46,009 basehttp "GET /transfer-balance-with-error/ HTTP/1.1" 200 33
+INFO 2024-12-10 10:00:54,889 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 10:00:54,927 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:00:56,293 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9452
+INFO 2024-12-10 10:00:56,347 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:14:37,164 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:14:39,206 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:14:59,259 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:15:00,404 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:15:43,539 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:15:44,797 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:15:53,670 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9452
+INFO 2024-12-10 10:15:53,715 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:15:59,127 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 10:15:59,177 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9844
+INFO 2024-12-10 10:15:59,226 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:16:08,852 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:16:32,491 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:16:33,922 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:16:52,926 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:16:54,194 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:16:54,622 basehttp "GET /transfer-balance/ HTTP/1.1" 200 80
+INFO 2024-12-10 10:17:13,094 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:17:14,489 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:17:15,101 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:19:27,622 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:19:28,834 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:21:06,006 basehttp "GET /transfer-balance-with-error/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:21:07,425 basehttp "GET /transfer-balance-with-error/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:21:08,456 basehttp "GET /transfer-balance-with-error/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:21:18,172 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:21:19,483 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:21:20,025 basehttp "GET /transfer-balance-with-error/ HTTP/1.1" 200 33
+INFO 2024-12-10 10:21:29,652 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:21:30,929 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:23:46,886 basehttp "GET /admin/ HTTP/1.1" 200 8834
+INFO 2024-12-10 10:23:48,482 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 10:23:48,533 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:23:49,918 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 10:23:49,965 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:23:52,358 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 10:23:53,678 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9456
+INFO 2024-12-10 10:23:53,723 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:23:56,222 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 10:24:34,258 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:24:35,766 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:24:44,304 basehttp "GET /transfer-balance-with-error/ HTTP/1.1" 200 80
+INFO 2024-12-10 10:24:51,666 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 10:24:53,007 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 10:24:53,052 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:25:27,494 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:25:29,441 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:25:29,655 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:25:29,855 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:25:30,135 basehttp "GET /transfer-balance/ HTTP/1.1" 200 85
+INFO 2024-12-10 10:25:34,678 basehttp "GET /admin/ HTTP/1.1" 200 8834
+INFO 2024-12-10 10:25:36,793 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 10:25:36,835 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:25:39,642 basehttp "GET /admin/ HTTP/1.1" 200 8834
+INFO 2024-12-10 10:25:40,522 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9456
+INFO 2024-12-10 10:25:40,566 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:25:53,138 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:25:54,492 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:26:16,475 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:26:18,458 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:26:28,460 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 10:26:29,437 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:31:14,691 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:31:16,334 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:31:55,347 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 10:31:56,802 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-10 10:33:13,534 log Not Found: /
+WARNING 2024-12-10 10:33:13,538 basehttp "GET / HTTP/1.1" 404 2700
+INFO 2024-12-10 10:33:26,769 basehttp "GET /nested-transaction/ HTTP/1.1" 200 153
+INFO 2024-12-10 10:34:43,244 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 10:34:44,461 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:34:47,928 basehttp "GET /nested-transaction/ HTTP/1.1" 200 88
+INFO 2024-12-10 10:36:52,979 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9640
+INFO 2024-12-10 10:36:53,032 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:36:54,105 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 10:36:54,159 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:36:57,965 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 10:36:58,000 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:37:02,077 basehttp "GET /nested-transaction/ HTTP/1.1" 200 88
+INFO 2024-12-10 10:37:04,409 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 10:37:04,446 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:39:03,264 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
+INFO 2024-12-10 10:39:04,746 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:41:52,628 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:44:37,807 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:44:38,550 basehttp "GET /atomic-request/ HTTP/1.1" 200 80
+INFO 2024-12-10 10:45:20,535 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 10:45:20,679 basehttp "GET /admin/login/?next=/admin/Research/account/1/change/ HTTP/1.1" 200 4212
+INFO 2024-12-10 10:45:25,371 basehttp "POST /admin/login/?next=/admin/Research/account/1/change/ HTTP/1.1" 200 4373
+INFO 2024-12-10 10:45:29,831 basehttp "POST /admin/login/?next=/admin/Research/account/1/change/ HTTP/1.1" 200 4373
+INFO 2024-12-10 10:45:38,519 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 10:45:38,611 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-10 10:45:42,543 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4321
+INFO 2024-12-10 10:46:16,531 autoreload Watching for file changes with StatReloader
