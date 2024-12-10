@@ -2,6 +2,7 @@ from django.http import JsonResponse
 from .models import Account
 from django.db import transaction
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
 
 '''def update_balance(request):
     account = Account.objects.first()
@@ -123,3 +124,18 @@ def atomic_request_example(request):
 
     except Exception as e:
         return JsonResponse({'status': 'Transfer failed', 'error': str(e)})
+    
+def register_user(request):
+    try:
+        username = request.POST['username']
+        email = request.POST['email']
+        password = request.POST['password']
+
+        if User.objects.filter(username=username).exists():
+            raise ValueError("Username already exists.")
+        
+        user = User.objects.create_user(username=username, email=email, password=password)
+        
+        return JsonResponse({'status': 'User registered successfully'})
+    except Exception as e:
+        return JsonResponse({'status': 'Registration failed', 'error': str(e)})

@@ -233,3 +233,45 @@ INFO 2024-12-10 10:45:38,519 basehttp "GET /admin/ HTTP/1.1" 302 0
 INFO 2024-12-10 10:45:38,611 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
 INFO 2024-12-10 10:45:42,543 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4321
 INFO 2024-12-10 10:46:16,531 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 10:46:20,128 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 10:46:20,299 basehttp "GET /admin/ HTTP/1.1" 200 6697
+INFO 2024-12-10 10:46:21,868 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 7831
+INFO 2024-12-10 10:46:22,019 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:46:31,653 basehttp "GET /admin/Research/account/add/ HTTP/1.1" 200 9211
+INFO 2024-12-10 10:46:31,785 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:46:39,928 basehttp "POST /admin/Research/account/add/ HTTP/1.1" 302 0
+INFO 2024-12-10 10:46:40,038 basehttp "GET /admin/Research/account/add/ HTTP/1.1" 200 9448
+INFO 2024-12-10 10:46:40,160 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:46:46,286 basehttp "POST /admin/Research/account/add/ HTTP/1.1" 302 0
+INFO 2024-12-10 10:46:46,408 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9581
+INFO 2024-12-10 10:46:46,528 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-10 10:46:54,303 log Not Found: /
+WARNING 2024-12-10 10:46:54,304 basehttp "GET / HTTP/1.1" 404 2963
+INFO 2024-12-10 10:47:04,324 basehttp "GET /atomic-request/ HTTP/1.1" 200 33
+INFO 2024-12-10 10:47:15,636 basehttp "GET /admin/ HTTP/1.1" 200 7427
+INFO 2024-12-10 10:47:17,589 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9451
+INFO 2024-12-10 10:47:17,732 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:47:20,835 basehttp "GET /atomic-request/ HTTP/1.1" 200 33
+INFO 2024-12-10 10:47:23,326 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 10:47:23,443 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:47:26,398 basehttp "GET /atomic-request/ HTTP/1.1" 200 33
+INFO 2024-12-10 10:47:28,633 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 10:47:28,752 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 10:47:31,280 basehttp "GET /atomic-request/ HTTP/1.1" 200 63
+INFO 2024-12-10 10:47:34,630 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 10:47:34,748 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 11:50:10,385 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 11:50:11,668 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 11:50:42,286 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 11:50:43,378 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 11:51:24,469 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 11:51:25,689 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 11:52:50,222 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 11:52:51,297 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 11:53:01,313 basehttp "GET /user-register/ HTTP/1.1" 200 56
+WARNING 2024-12-10 11:54:25,488 log Forbidden (CSRF cookie not set.): /user-register/
+WARNING 2024-12-10 11:54:25,489 basehttp "POST /user-register/ HTTP/1.1" 403 2855
+WARNING 2024-12-10 11:57:19,691 log Forbidden (CSRF cookie not set.): /user-register/
+WARNING 2024-12-10 11:57:19,743 basehttp "POST /user-register/ HTTP/1.1" 403 2855
+INFO 2024-12-10 11:59:10,072 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
+INFO 2024-12-10 11:59:11,594 autoreload Watching for file changes with StatReloader
