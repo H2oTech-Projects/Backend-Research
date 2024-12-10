@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_celery_results',
     'django_celery_beat',
-    'send_mail'
+    'send_mail',
+    'taskmanager'
 ]
 
 MIDDLEWARE = [
