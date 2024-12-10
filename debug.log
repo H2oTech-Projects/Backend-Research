@@ -275,3 +275,45 @@ WARNING 2024-12-10 11:57:19,691 log Forbidden (CSRF cookie not set.): /user-regi
 WARNING 2024-12-10 11:57:19,743 basehttp "POST /user-register/ HTTP/1.1" 403 2855
 INFO 2024-12-10 11:59:10,072 autoreload E:\BackendResearch\Backend\Backend\settings.py changed, reloading.
 INFO 2024-12-10 11:59:11,594 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 11:59:15,834 basehttp "POST /user-register/ HTTP/1.1" 200 42
+INFO 2024-12-10 11:59:19,231 basehttp "POST /user-register/ HTTP/1.1" 200 70
+INFO 2024-12-10 12:01:51,117 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 12:01:52,282 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:01:59,668 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 12:02:00,716 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:02:34,242 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 12:02:36,091 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:03:03,851 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 12:03:05,485 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:03:30,316 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 12:03:30,449 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:03:37,582 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:03:37,705 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:03:37,832 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:04:03,103 basehttp "GET /trans-blc/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:04:06,164 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9378
+INFO 2024-12-10 12:04:06,274 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:04:08,066 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9449
+INFO 2024-12-10 12:04:08,198 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:04:20,994 basehttp "GET /trans-blc/ HTTP/1.1" 200 63
+INFO 2024-12-10 12:04:24,752 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9449
+INFO 2024-12-10 12:04:24,868 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:07:56,948 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:07:57,218 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:07:57,355 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:08:00,550 basehttp "POST /trans-blc/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:08:01,521 basehttp "POST /trans-blc/ HTTP/1.1" 200 63
+INFO 2024-12-10 12:08:08,769 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 12:08:08,887 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:08:14,771 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:08:14,880 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:08:14,998 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:08:18,245 basehttp "POST /trans-blc/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:08:19,177 basehttp "POST /trans-blc/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:08:47,531 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 12:08:47,682 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:08:56,427 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:08:56,541 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:08:56,819 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:08:59,353 basehttp "POST /trans-blc/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:09:00,424 basehttp "POST /trans-blc/ HTTP/1.1" 200 63

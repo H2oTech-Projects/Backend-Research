@@ -139,3 +139,21 @@ def register_user(request):
         return JsonResponse({'status': 'User registered successfully'})
     except Exception as e:
         return JsonResponse({'status': 'Registration failed', 'error': str(e)})
+
+def transferring_balance(request):
+    try:
+        with transaction.atomic():
+            # Lock the account record for updating
+            account = Account.objects.select_for_update().get(id=1)
+
+            transfer_amount = 500
+            if account.balance < transfer_amount:
+                raise ValueError("Insufficient balance.")
+
+            account.balance -= transfer_amount
+            account.save()
+
+            return JsonResponse({'status': 'Transfer successful'})
+
+    except Exception as e:
+        return JsonResponse({'status': 'Transfer failed', 'error': str(e)})
