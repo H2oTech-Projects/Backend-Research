@@ -317,3 +317,323 @@ INFO 2024-12-10 12:08:56,541 basehttp "GET /admin/Research/account/ HTTP/1.1" 20
 INFO 2024-12-10 12:08:56,819 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2024-12-10 12:08:59,353 basehttp "POST /trans-blc/ HTTP/1.1" 200 33
 INFO 2024-12-10 12:09:00,424 basehttp "POST /trans-blc/ HTTP/1.1" 200 63
+INFO 2024-12-10 12:14:52,300 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-10 12:14:54,903 log Not Found: /transfer_balance_with_deadlock_handling/
+WARNING 2024-12-10 12:14:54,904 basehttp "POST /transfer_balance_with_deadlock_handling/ HTTP/1.1" 404 3894
+INFO 2024-12-10 12:15:04,356 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 12:15:04,473 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:15:08,924 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:15:09,038 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:15:09,148 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:15:10,452 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9455
+INFO 2024-12-10 12:15:10,563 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:15:14,672 basehttp "POST /admin/Research/account/2/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:15:14,770 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9583
+INFO 2024-12-10 12:15:14,881 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-10 12:16:28,822 log Not Found: /transfer_balance_with_deadlock_handling/
+WARNING 2024-12-10 12:16:28,823 basehttp "POST /transfer_balance_with_deadlock_handling/ HTTP/1.1" 404 3894
+WARNING 2024-12-10 12:16:31,300 log Not Found: /transfer_balance_with_deadlock_handling/
+WARNING 2024-12-10 12:16:31,302 basehttp "POST /transfer_balance_with_deadlock_handling/ HTTP/1.1" 404 3894
+INFO 2024-12-10 12:17:29,392 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:17:32,628 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:17:39,012 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 12:17:39,123 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:17:43,323 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:17:43,419 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:17:43,532 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:18:40,958 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:19:05,081 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:19:09,486 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 12:19:09,600 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:19:13,327 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:19:13,430 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:19:13,542 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:20:04,420 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:20:04,764 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:20:04,964 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 63
+INFO 2024-12-10 12:20:05,124 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 63
+INFO 2024-12-10 12:20:50,319 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 12:20:50,432 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:20:54,634 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 12:20:54,738 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 12:20:54,855 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 12:23:53,677 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 12:23:53,833 basehttp "POST /deadlock-handling/?account1_id=1&account2_id=2&transfer_amount=500 HTTP/1.1" 200 33
+INFO 2024-12-10 12:23:54,052 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 63
+INFO 2024-12-10 12:23:54,241 basehttp "POST /deadlock-handling/?account1_id=1&account2_id=2&transfer_amount=500 HTTP/1.1" 200 63
+INFO 2024-12-10 12:34:35,495 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 12:34:37,092 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:35:36,494 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 12:35:37,811 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:35:46,610 basehttp "GET /manual-transaction HTTP/1.1" 301 0
+ERROR 2024-12-10 12:35:46,799 log Internal Server Error: /manual-transaction/
+Traceback (most recent call last):
+  File "E:\BackendResearch\Backend\Research\views.py", line 190, in manual_transaction
+    transaction.set_autocommit(False)
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\transaction.py", line 35, in set_autocommit
+    return get_connection(using).set_autocommit(autocommit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\backends\base\base.py", line 471, in set_autocommit
+    self.validate_no_atomic_block()
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\backends\base\base.py", line 515, in validate_no_atomic_block
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: This is forbidden when an 'atomic' block is active.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BackendResearch\Backend\Research\views.py", line 205, in manual_transaction
+    transaction.rollback()
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\transaction.py", line 45, in rollback
+    get_connection(using).rollback()
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\backends\base\base.py", line 336, in rollback
+    self.validate_no_atomic_block()
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\backends\base\base.py", line 515, in validate_no_atomic_block
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: This is forbidden when an 'atomic' block is active.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 209, in manual_transaction
+    transaction.set_autocommit(True)
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\transaction.py", line 35, in set_autocommit
+    return get_connection(using).set_autocommit(autocommit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\backends\base\base.py", line 471, in set_autocommit
+    self.validate_no_atomic_block()
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\backends\base\base.py", line 515, in validate_no_atomic_block
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: This is forbidden when an 'atomic' block is active.
+ERROR 2024-12-10 12:35:46,818 basehttp "GET /manual-transaction/ HTTP/1.1" 500 117008
+INFO 2024-12-10 12:37:11,733 autoreload E:\BackendResearch\Backend\Research\urls.py changed, reloading.
+INFO 2024-12-10 12:37:12,931 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:37:16,922 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 14:37:18,001 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:44:43,604 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 14:44:45,176 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:45:28,483 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 14:45:46,044 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 169, in transfer_balance_with_deadlock_handling
+    raise ValidationError("Insufficient balance.")
+django.core.exceptions.ValidationError: ['Insufficient balance.']
+ERROR 2024-12-10 14:45:46,050 basehttp "GET /deadlock-handling/ HTTP/1.1" 500 72190
+INFO 2024-12-10 14:46:00,766 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 14:46:02,120 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 14:46:04,403 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 169, in transfer_balance_with_deadlock_handling
+    raise ValidationError("Insufficient balance.")
+django.core.exceptions.ValidationError: ['Insufficient balance.']
+ERROR 2024-12-10 14:46:04,403 basehttp "GET /deadlock-handling/ HTTP/1.1" 500 72323
+ERROR 2024-12-10 14:46:06,715 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 169, in transfer_balance_with_deadlock_handling
+    raise ValidationError("Insufficient balance.")
+django.core.exceptions.ValidationError: ['Insufficient balance.']
+ERROR 2024-12-10 14:46:06,715 basehttp "GET /deadlock-handling/ HTTP/1.1" 500 72323
+INFO 2024-12-10 14:46:10,461 basehttp "GET /admin/ HTTP/1.1" 200 10257
+INFO 2024-12-10 14:46:11,941 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9378
+INFO 2024-12-10 14:46:12,104 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:46:13,350 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9448
+INFO 2024-12-10 14:46:13,477 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:46:17,388 basehttp "POST /admin/Research/account/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:46:17,505 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9582
+INFO 2024-12-10 14:46:17,632 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:46:27,122 basehttp "GET /deadlock-handling HTTP/1.1" 301 0
+INFO 2024-12-10 14:46:27,238 basehttp "GET /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 14:46:53,061 basehttp "GET /admin/ HTTP/1.1" 200 10261
+INFO 2024-12-10 14:46:56,088 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9378
+INFO 2024-12-10 14:46:56,310 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:46:57,636 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9455
+INFO 2024-12-10 14:46:57,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:49:03,229 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 14:49:03,407 basehttp "POST /deadlock-handling/?account1_id=1&account2_id=2&transfer_amount=500 HTTP/1.1" 200 33
+INFO 2024-12-10 14:49:03,602 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 14:49:03,773 basehttp "POST /deadlock-handling/?account1_id=1&account2_id=2&transfer_amount=500 HTTP/1.1" 200 33
+INFO 2024-12-10 14:49:03,930 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 14:49:04,092 basehttp "POST /deadlock-handling/?account1_id=1&account2_id=2&transfer_amount=500 HTTP/1.1" 200 33
+INFO 2024-12-10 14:51:54,834 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:54:06,844 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 14:54:08,366 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:55:22,829 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 14:56:26,219 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 164, in transfer_balance_with_deadlock_handling
+    account1_id = int(request.POST.get('account1_id'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR 2024-12-10 14:56:26,227 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 69741
+ERROR 2024-12-10 14:56:28,382 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 164, in transfer_balance_with_deadlock_handling
+    account1_id = int(request.POST.get('account1_id'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR 2024-12-10 14:56:28,388 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 69741
+INFO 2024-12-10 14:57:37,103 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 14:57:44,309 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 164, in transfer_balance_with_deadlock_handling
+    account1_id = int(request.POST.get('account1_id'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR 2024-12-10 14:57:44,319 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 69741
+INFO 2024-12-10 14:58:51,734 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 14:58:53,241 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 14:59:08,715 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 168, in transfer_balance_with_deadlock_handling
+    account1 = Account.objects.select_for_update().get(id=account1_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+Research.models.Account.DoesNotExist: Account matching query does not exist.
+ERROR 2024-12-10 14:59:08,727 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 74570
+INFO 2024-12-10 14:59:43,250 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 14:59:44,570 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 14:59:52,233 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 169, in transfer_balance_with_deadlock_handling
+    raise ValidationError("Insufficient balance.")
+django.core.exceptions.ValidationError: ['Insufficient balance.']
+ERROR 2024-12-10 14:59:52,233 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 69935
+ERROR 2024-12-10 14:59:54,529 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 169, in transfer_balance_with_deadlock_handling
+    raise ValidationError("Insufficient balance.")
+django.core.exceptions.ValidationError: ['Insufficient balance.']
+ERROR 2024-12-10 14:59:54,533 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 69935
+ERROR 2024-12-10 15:00:10,382 log Internal Server Error: /deadlock-handling/
+Traceback (most recent call last):
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "E:\BackendResearch\Backend\Research\views.py", line 169, in transfer_balance_with_deadlock_handling
+    raise ValidationError("Insufficient balance.")
+django.core.exceptions.ValidationError: ['Insufficient balance.']
+ERROR 2024-12-10 15:00:10,387 basehttp "POST /deadlock-handling/ HTTP/1.1" 500 70600
+INFO 2024-12-10 15:00:16,915 basehttp "GET /admin/Research/account/2/change/ HTTP/1.1" 200 9455
+INFO 2024-12-10 15:00:17,060 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 15:00:18,882 basehttp "GET /admin/Research/account/ HTTP/1.1" 200 9378
+INFO 2024-12-10 15:00:18,997 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 15:00:20,552 basehttp "GET /admin/Research/account/1/change/ HTTP/1.1" 200 9450
+INFO 2024-12-10 15:00:20,662 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 15:00:44,900 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 15:00:46,339 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 15:00:49,420 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 33
+INFO 2024-12-10 15:03:25,164 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 15:03:26,954 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 15:04:08,278 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 15:04:09,629 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 15:04:38,572 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:04:51,915 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:04:57,662 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:08:59,284 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:09:21,205 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:09:23,434 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:09:25,112 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:10:08,535 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:10:10,748 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
+INFO 2024-12-10 15:27:38,613 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
+INFO 2024-12-10 15:27:40,019 autoreload Watching for file changes with StatReloader

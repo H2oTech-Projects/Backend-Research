@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from .models import Account
-from django.db import transaction
+from django.db import transaction, DatabaseError
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
@@ -67,9 +67,6 @@ def transfer_balance(request):
         return JsonResponse({'status': 'Transfer failed', 'error': str(e)})
 '''
 
-from django.db import transaction
-from django.http import JsonResponse
-from .models import Account
 
 def nested_transaction_example(request):
     try:
@@ -157,3 +154,29 @@ def transferring_balance(request):
 
     except Exception as e:
         return JsonResponse({'status': 'Transfer failed', 'error': str(e)})
+    
+def transfer_balance_with_deadlock_handling(request):
+    try:
+        with transaction.atomic():
+            account1 = Account.objects.select_for_update().get(id=request.POST.get('account1_id'))
+            account2 = Account.objects.select_for_update().get(id=request.POST.get('account2_id'))
+
+
+            transfer_amount = float(request.POST.get('transfer_amount', 0))
+            if account1.balance < transfer_amount:
+                raise ValueError("Insufficient balance.")
+
+            # Perform transfer
+            account1.balance -= transfer_amount
+            account2.balance += transfer_amount
+
+            account1.save()
+            account2.save()
+
+        return JsonResponse({'status': 'Transfer successful'})
+
+    except DatabaseError as e:
+        return JsonResponse({'status': 'Database error', 'error': str(e)})
+    except Exception as e:
+        return JsonResponse({'status': 'Transfer failed', 'error': str(e)})
+    
