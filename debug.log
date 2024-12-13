@@ -637,3 +637,4 @@ INFO 2024-12-10 15:10:08,535 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
 INFO 2024-12-10 15:10:10,748 basehttp "POST /deadlock-handling/ HTTP/1.1" 200 80
 INFO 2024-12-10 15:27:38,613 autoreload E:\BackendResearch\Backend\Research\views.py changed, reloading.
 INFO 2024-12-10 15:27:40,019 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 15:36:38,391 autoreload Watching for file changes with StatReloader
