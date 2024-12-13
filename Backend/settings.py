@@ -124,7 +124,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGGING = {
+'''LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # Don't disable Django's default loggers
     'formatters': {
@@ -162,4 +162,4 @@ LOGGING = {
             'propagate': False,
         },
     },
-}
+}'''
