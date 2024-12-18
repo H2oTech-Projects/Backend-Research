@@ -6,6 +6,7 @@ from rest_framework import status
 from .models import Book
 from .serializers import BookSerializer
 from drf_yasg.utils import swagger_auto_schema
+from rest_framework.permissions import IsAuthenticated
 
 class SwaggerAPIView(APIView):
     def get(self, request):
@@ -21,6 +22,7 @@ class GoodbyeAPIView(APIView):
 
 
 class BookListCreateAPIView(APIView):
+    permission_classes = [IsAuthenticated]
     def get(self, request):
         books = Book.objects.all()
         serializer = BookSerializer(books, many=True)
@@ -55,7 +57,7 @@ class BookAPIView(APIView):
         request_body=BookSerializer,
         responses={200: BookSerializer(), 400: "Bad Request", 404: "Not Found"}
     )
-    
+
     def put(self, request, pk):
         try:
             book = Book.objects.get(pk=pk)
