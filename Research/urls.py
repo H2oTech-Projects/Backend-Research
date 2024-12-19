@@ -6,4 +6,5 @@ urlpatterns = [
     path('bye/', GoodbyeAPIView.as_view(), name='bye-world'),
     path('books/', BookListCreateAPIView.as_view(), name='book-list'),
     path('books/<int:pk>/', BookAPIView.as_view(), name='book-detail'),
+    
 ]
