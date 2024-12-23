@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Research.views import UploadTIFFView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('upload-tiff/', UploadTIFFView.as_view(), name='upload_tiff'),
 ]

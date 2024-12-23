@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+import os
 
 # Application definition
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
     'Research',
     'rest_framework',
 ]
@@ -45,7 +47,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -76,11 +78,15 @@ WSGI_APPLICATION = 'Backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": {
+        "ENGINE": "django.contrib.gis.db.backends.postgis",
+        "NAME": "geo",
+        "USER": "postgres",
+        "PASSWORD" :"postgres",
+        "PORT": "5433", #Assign port according to your postgres port
+    },
 }
+
 
 
 # Password validation
@@ -124,6 +130,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+OSGEO4W = "C:\OSGeo4W" # path to OSGEO4W 
+os.environ['OSGEO4W_ROOT'] = OSGEO4W
+os.environ['GDAL_DATA'] = "C:\Program Files\PostgreSQL\15\gdal-data"# Path to GDAL_DATA
+os.environ['PROJ_LIB'] = "C:\OSGeo4W\share\proj" #Path to PROJ_LIB
+GDAL_LIBRARY_PATH = 'C:\OSGeo4W\\bin\gdal309'# Path to gdal309
+os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']
 '''LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # Don't disable Django's default loggers
