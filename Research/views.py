@@ -1,10 +1,10 @@
 from django.http import JsonResponse
-from django.views import View
+from rest_framework.views import APIView
 from .utils import upload_geotiff
 import os
 import tempfile
 
-class UploadTIFFView(View):
+class UploadTIFFView(APIView):
     def post(self, request):
         file = request.FILES.get('file')
         print(request.FILES)  # Should show the uploaded file
