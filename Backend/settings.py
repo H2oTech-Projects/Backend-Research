@@ -83,7 +83,8 @@ DATABASES = {
         "NAME": "geo",
         "USER": "postgres",
         "PASSWORD" :"postgres",
-        "PORT": "5433", #Assign port according to your postgres port
+        "HOST": "localhost",
+        "PORT": "5432", #Assign port according to your postgres port
     },
 }
 
@@ -132,12 +133,26 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-OSGEO4W = "C:\OSGeo4W" # path to OSGEO4W 
+import os
+
+GDAL_LIBRARY_PATH = os.getenv("GDAL_LIBRARY_PATH", "/opt/homebrew/Cellar/gdal/3.10.0_3/lib/libgdal.dylib")
+import sys
+if not os.path.exists(GDAL_LIBRARY_PATH):
+    sys.exit("GDAL library path not found.")
+if not os.path.exists(os.getenv("GEOS_LIBRARY_PATH", "/opt/homebrew/lib/libgeos_c.dylib")):
+    sys.exit("GEOS library path not found.")
+
+
+STATICFILES_DIRS = [BASE_DIR / "static"]
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+'''OSGEO4W = "C:\OSGeo4W" # path to OSGEO4W 
 os.environ['OSGEO4W_ROOT'] = OSGEO4W
 os.environ['GDAL_DATA'] = "C:\Program Files\PostgreSQL\15\gdal-data"# Path to GDAL_DATA
 os.environ['PROJ_LIB'] = "C:\OSGeo4W\share\proj" #Path to PROJ_LIB
 GDAL_LIBRARY_PATH = 'C:\OSGeo4W\\bin\gdal309'# Path to gdal309
-os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']
+os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']'''
 '''LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # Don't disable Django's default loggers
