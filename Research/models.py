@@ -14,6 +14,16 @@ class Editor(models.Model):
     name = models.CharField(max_length=20)
     name_of_book =  models.CharField(max_length=20)
     
-
     def __str__(self):
         return self.name
+
+
+class Product(models.Model):
+    name = models.CharField(max_length=20)
+    quantity =  models.IntegerField()
+    delivered_date = models.DateField(auto_now_add=True)
+    status = models.CharField(max_length=50, default='undelivered')
+    
+    def __str__(self):
+        return self.name
+
