@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Author, Editor, Product, employee
 from Research.admin_site import custom_admin_site
 
+
 '''class AuthorAdmin(admin.ModelAdmin):
     pass
 admin.site.register(Author, AuthorAdmin)'''
@@ -42,4 +43,3 @@ class employeeAdmin(admin.ModelAdmin):
         return obj.post
     
 admin.site.register(employee , employeeAdmin)
-
