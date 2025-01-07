@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Research.admin_site import custom_admin_site
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('custom-admin/', custom_admin_site.urls),
 ]
+
