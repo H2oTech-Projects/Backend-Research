@@ -1,5 +1,5 @@
 from django.contrib.admin import AdminSite
-
+'''
 from .models import Author
 
 class CustomAdminSite(AdminSite):
@@ -9,7 +9,7 @@ class CustomAdminSite(AdminSite):
 
 custom_admin_site = CustomAdminSite(name='custom_admin')
 
-'''from django.contrib.admin import ModelAdmin
+from django.contrib.admin import ModelAdmin
 class AuthorAdmin(ModelAdmin):
     list_display = ('name', 'number_of_book')
 

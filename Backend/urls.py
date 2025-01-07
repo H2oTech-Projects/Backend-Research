@@ -16,11 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Research.admin_site import custom_admin_site
-
+#from Research.admin_site import custom_admin_site
+admin.site.site_title = "TicketsPlus site admin"
+admin.site.site_header = "TicketsPlus administration"
+admin.site.index_title = "Site administration"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('custom-admin/', custom_admin_site.urls),
+    #path('admin/', admin.site.urls),
+    path('customadmin/', admin.site.urls),
+    #path('custom-admin/', custom_admin_site.urls),
 ]
 
