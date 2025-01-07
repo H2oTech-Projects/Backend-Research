@@ -20,10 +20,17 @@ class Editor(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=20)
-    quantity =  models.IntegerField()
+    quantity =  models.IntegerField(null=True, blank=True)
     delivered_date = models.DateField(auto_now_add=True)
     status = models.CharField(max_length=50, default='undelivered')
     
+    def __str__(self):
+        return self.name
+
+class employee(models.Model):
+    name = models.CharField(max_length=20)
+    post =  models.CharField(max_length = 30, blank=True, null=True)
+
     def __str__(self):
         return self.name
 
