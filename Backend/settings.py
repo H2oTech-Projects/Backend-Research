@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'django.contrib.admin.apps.SimpleAdminConfig',
     'Research',
+    #"tickets.apps.TicketsConfig",
+    "djangoql",
+    "import_export",
     'rest_framework',
 ]
 

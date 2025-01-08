@@ -1,6 +1,16 @@
 from django.contrib import admin
 #from .models import Author, Editor, Product, employee
 #from Research.admin_site import custom_admin_site
+from django.contrib.admin import SimpleListFilter
+from django.urls import reverse
+from django.utils.html import format_html
+from djangoql.admin import DjangoQLSearchMixin
+from import_export.admin import ImportExportActionModelAdmin
+'''
+from tickets.forms import TicketAdminForm
+'''
+from .models import Venue, ConcertCategory, Concert, Ticket
+
 
 
 '''class AuthorAdmin(admin.ModelAdmin):
@@ -44,30 +54,20 @@ class employeeAdmin(admin.ModelAdmin):
     
 admin.site.register(employee , employeeAdmin)
 '''
-from django.contrib.admin import SimpleListFilter
-from django.urls import reverse
-from django.utils.html import format_html
-'''from djangoql.admin import DjangoQLSearchMixin
-from import_export.admin import ImportExportActionModelAdmin
 
-from tickets.forms import TicketAdminForm
-'''
-from .models import Venue, ConcertCategory, Concert, Ticket
-
-
-class ConcertInline(admin.TabularInline):
+class ConcertInline(admin.TabularInline):#manage related models directly in the admin interface of the parent model.
     model = Concert
     fields = ["name", "starts_at", "price", "tickets_left"]
-    readonly_fields = ["name", "starts_at", "price", "tickets_left"]
-    max_num = 0
+    readonly_fields = ["name", "starts_at", "price", "tickets_left"]#Makes the specified fields read-only, so they can be viewed but not edited.
+    max_num = 0#Prevents adding new Concert records directly from the inline interface.
     extra = 0
-    can_delete = False
-    show_change_link = True
+    can_delete = False#Disables the option to delete related Concert records from the inline.
+    show_change_link = True#Adds a link to edit the specific Concert record from the inline view.
 
 
 class VenueAdmin(admin.ModelAdmin):
     list_display = ["name", "address", "capacity"]
-    inlines = [ConcertInline]
+    inlines = [ConcertInline]#Includes the ConcertInline in the Venue admin, allowing inline management of related Concert objects.
 
 
 class ConcertCategoryAdmin(admin.ModelAdmin):
@@ -75,7 +75,7 @@ class ConcertCategoryAdmin(admin.ModelAdmin):
 
 
 class SoldOutFilter(SimpleListFilter):
-    title = "Sold out"
+    title = "Sold out" # Defines the display name of the filter in the admin interface.
     parameter_name = "sold_out"
 
     def lookups(self, request, model_admin):
@@ -86,7 +86,7 @@ class SoldOutFilter(SimpleListFilter):
 
     def queryset(self, request, queryset):
         if self.value() == "yes":
-            return queryset.filter(tickets_left=0)
+            return queryset.filter(tickets_left=0)#If the value is "yes", it filters concerts with tickets_left=0.
         else:
             return queryset.exclude(tickets_left=0)
 
@@ -107,7 +107,7 @@ class ConcertAdmin(admin.ModelAdmin):
     def display_price(self, obj):
         return f"${obj.price}"
 
-    display_price.short_description = "Price"
+    display_price.short_description = "Price" #Generates a clickable link to the admin edit page of the related Venue.
     display_price.admin_order_field = "price"
 
     def display_venue(self, obj):
@@ -117,7 +117,7 @@ class ConcertAdmin(admin.ModelAdmin):
     display_venue.short_description = "Venue"
 
 
-'''@admin.action(description="Activate selected tickets")
+@admin.action(description="Activate selected tickets")
 def activate_tickets(modeladmin, request, queryset):
     queryset.update(is_active=True)
 
@@ -127,13 +127,13 @@ def deactivate_tickets(modeladmin, request, queryset):
     queryset.update(is_active=False)
 
 
-class TicketAdmin(DjangoQLSearchMixin, ImportExportActionModelAdmin):
+class TicketAdmin(DjangoQLSearchMixin,  ImportExportActionModelAdmin):
     list_display = ["customer_full_name", "concert", "payment_method", "paid_at", "is_active"]
     list_select_related = ["concert", "concert__venue"]
     actions = [activate_tickets, deactivate_tickets]
-    form = TicketAdminForm'''
+   # form = TicketAdminForm
 
 admin.site.register(Venue, VenueAdmin)
 admin.site.register(ConcertCategory, ConcertCategoryAdmin)
 admin.site.register(Concert, ConcertAdmin)
-#admin.site.register(Ticket, TicketAdmin)
+admin.site.register(Ticket, TicketAdmin)
