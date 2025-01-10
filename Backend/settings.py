@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'Research',
     'rest_framework',
+    'celery'
 ]
 
 MIDDLEWARE = [
