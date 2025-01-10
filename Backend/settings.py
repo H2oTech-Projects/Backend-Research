@@ -143,10 +143,19 @@ if not os.path.exists(GDAL_LIBRARY_PATH):
 if not os.path.exists(os.getenv("GEOS_LIBRARY_PATH", "/opt/homebrew/lib/libgeos_c.dylib")):
     sys.exit("GEOS library path not found.")
 
+DATA_UPLOAD_MAX_MEMORY_SIZE = 314572800 
 
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [
+BASE_DIR / "static"
+]
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
 
 '''OSGEO4W = "C:\OSGeo4W" # path to OSGEO4W 
 os.environ['OSGEO4W_ROOT'] = OSGEO4W

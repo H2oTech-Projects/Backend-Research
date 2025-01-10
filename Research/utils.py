@@ -1,9 +1,9 @@
 import requests
 import os
 
-GEOSERVER_URL = "http://localhost:8080/geoserver"
+GEOSERVER_URL = "http://staging.flowgeos.wateraccounts.com/geoserver/"
 USERNAME = "admin"
-PASSWORD = "geoserver"
+PASSWORD = "rGcBq0kq}]75"
 
 def upload_geotiff(workspace, store_name, file_path):
     content_type = "image/tiff" if file_path.endswith(".tif") else "application/zip"

@@ -38,18 +38,17 @@ import tempfile
 #to upload multiple files
 class UploadTIFFView(APIView):
     def post(self, request):
-        files = request.FILES.getlist('file')  # Get all uploaded files
+        files = request.FILES.getlist('file')  # Ensure this key matches your Postman request
         if not files:
             return JsonResponse({"error": "No files provided"}, status=400)
 
         workspace = request.POST.get('workspace')
         if not workspace:
             return JsonResponse({"error": "Workspace is required"}, status=400)
-
         responses = []
         for file in files:
             store_name = os.path.splitext(file.name)[0]  # Create store name from file name
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.tif') as temp_file:
+            with tempfile.NamedTemporaryFile(delete=False, suffix='.tiff') as temp_file:
                 file_path = temp_file.name
                 for chunk in file.chunks():
                     temp_file.write(chunk)
@@ -66,3 +65,4 @@ class UploadTIFFView(APIView):
                     os.remove(file_path)
 
         return JsonResponse({"results": responses})
+
