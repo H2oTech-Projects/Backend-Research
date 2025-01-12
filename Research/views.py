@@ -5,7 +5,7 @@ import os
 import tempfile
 import zipfile
 # to upload single file
-class UploadTIFFView(APIView):
+'''class UploadTIFFView(APIView):
     def post(self, request):
         file = request.FILES.get('file')
         print(request.FILES)  # Should show the uploaded file
@@ -33,7 +33,7 @@ class UploadTIFFView(APIView):
             if os.path.exists(file_path):
                 os.remove(file_path)
         
-        return JsonResponse({"message": result})
+        return JsonResponse({"message": result})'''
 
 #to upload multiple files
 '''
@@ -72,10 +72,11 @@ class UploadTIFFView(APIView):
 
         return JsonResponse({"results": responses})
 '''
-'''
+# to unzip the file if necessary
+
 class UploadTIFFView(APIView):
     def post(self, request):
-        files = request.FILES.getlist('file')  # Ensure this key matches your Postman request
+        files = request.FILES.getlist('file')  
         if not files:
             return JsonResponse({"error": "No files provided"}, status=400)
 
@@ -85,18 +86,16 @@ class UploadTIFFView(APIView):
 
         responses = []
         for file in files:
-            if file.name.endswith('.zip'):  # Check if the file is a ZIP file
+            if file.name.endswith('.zip'):  
                 try:
-                    # Create a temporary directory to extract the ZIP contents
                     with tempfile.TemporaryDirectory() as temp_dir:
                         with zipfile.ZipFile(file, 'r') as zip_ref:
                             zip_ref.extractall(temp_dir)
 
-                        # Now process all TIFF files in the extracted directory
                         for extracted_file in os.listdir(temp_dir):
                             if extracted_file.endswith(('.tiff', '.tif')):
                                 file_path = os.path.join(temp_dir, extracted_file)
-                                store_name = os.path.splitext(extracted_file)[0]  # Store name from the extracted file
+                                store_name = os.path.splitext(extracted_file)[0]  
                                 
                                 # Upload the GeoTIFF to GeoServer
                                 result = upload_geotiff(workspace, store_name, file_path)
@@ -128,4 +127,3 @@ class UploadTIFFView(APIView):
         return JsonResponse({"results": responses})
 
 
-'''
