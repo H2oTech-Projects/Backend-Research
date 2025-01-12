@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+'''from django.http import JsonResponse
 from django.views import View
 from requests.auth import HTTPBasicAuth
 import requests
@@ -71,3 +71,4 @@ class UploadGeoTIFFView(View):
             return JsonResponse({"error": "Error creating store.", "details": store_response.text}, status=500)
         except Exception as e:
             return JsonResponse({"error": str(e)}, status=500)
+'''

@@ -143,7 +143,10 @@ if not os.path.exists(GDAL_LIBRARY_PATH):
 if not os.path.exists(os.getenv("GEOS_LIBRARY_PATH", "/opt/homebrew/lib/libgeos_c.dylib")):
     sys.exit("GEOS library path not found.")
 
-DATA_UPLOAD_MAX_MEMORY_SIZE = 314572800 
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 524288000  # 500MB
+FILE_UPLOAD_MAX_MEMORY_SIZE = 524288000  # 500MB
+
 
 STATICFILES_DIRS = [
 BASE_DIR / "static"
