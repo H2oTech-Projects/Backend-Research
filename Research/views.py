@@ -36,7 +36,7 @@ import zipfile
         return JsonResponse({"message": result})'''
 
 #to upload multiple files
-'''
+
 class UploadTIFFView(APIView):
     def post(self, request):
         files = request.FILES.getlist('file')  # Ensure this key matches your Postman request
@@ -71,9 +71,9 @@ class UploadTIFFView(APIView):
                     os.remove(file_path)
 
         return JsonResponse({"results": responses})
-'''
-# to unzip the file if necessary
 
+# to unzip the file if necessary
+'''
 class UploadTIFFView(APIView):
     def post(self, request):
         files = request.FILES.getlist('file')  
@@ -125,5 +125,5 @@ class UploadTIFFView(APIView):
                         os.remove(file_path)
 
         return JsonResponse({"results": responses})
-
+'''
 
