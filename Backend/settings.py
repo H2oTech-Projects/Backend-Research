@@ -27,7 +27,47 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#strategy2
+'''import os
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-secret-key')
+
+DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
+
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost').split(',')
+
+DATABASES = {
+    'default': {
+    'default': {
+        'ENGINE': os.environ.get('DJANGO_DB_ENGINE', 'django.db.backends.sqlite3'),
+        'NAME': os.environ.get('DJANGO_DB_NAME', BASE_DIR / 'db.sqlite3'),
+        'USER': os.environ.get('DJANGO_DB_USER', ''),
+        'PASSWORD': os.environ.get('DJANGO_DB_PASSWORD', ''),
+        'HOST': os.environ.get('DJANGO_DB_HOST', 'localhost'),
+        'PORT': os.environ.get('DJANGO_DB_PORT', ''),
+    }
+}'''
+#strategy2
+#strategy 3
+'''
+import environ
+import os
+
+env = environ.Env(
+    DEBUG=(bool, False)  # Set DEBUG as a boolean with a default value of False
+)
+## Read the .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+# Use environment variables
+SECRET_KEY = env('DJANGO_SECRET_KEY')  # Fetch SECRET_KEY from .env
+DEBUG = env('DJANGO_DEBUG')  # Fetch DEBUG from .env (automatically cast to the correct type)
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')  # Fetch and convert to a Python list
+'''
+#Strategy 3
 # Application definition
 
 INSTALLED_APPS = [
