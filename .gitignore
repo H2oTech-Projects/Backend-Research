@@ -1,0 +1,29 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# SQLite database
+db.sqlite3
+
+# Django media and static files
+media/
+static/
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+*.env
+
+# Logs
+*.log
+
+# Translation files
+*.pot
+*.mo
+
+# Editor files
+*.bak
+*.swp
