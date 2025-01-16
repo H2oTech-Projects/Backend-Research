@@ -1,4 +1,4 @@
-# settings/base.py
+'''# settings/base.py
 #This file will contain the settings shared across all environments.
 import os
 from pathlib import Path
@@ -45,3 +45,4 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Backend.wsgi.application'
+'''

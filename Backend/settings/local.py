@@ -1,4 +1,4 @@
-#This file contains settings specific to development:
+'''#This file contains settings specific to development:
 from .base import *
 
 DEBUG = True
@@ -13,3 +13,4 @@ DATABASES = {
 }
 
 STATIC_URL = '/static/'
+'''
