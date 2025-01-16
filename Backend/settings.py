@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []'''
 
 #strategy2
-import os
+'''import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,11 +52,11 @@ DATABASES = {
         'PORT': os.environ.get('DJANGO_DB_PORT', '5432'),
     }
 }
-
+'''
 
 #strategy2
 #strategy 3
-'''
+
 import environ
 import os
 
@@ -70,7 +70,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env('DJANGO_SECRET_KEY')  # Fetch SECRET_KEY from .env
 DEBUG = env('DJANGO_DEBUG')  # Fetch DEBUG from .env (automatically cast to the correct type)
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')  # Fetch and convert to a Python list
-'''
+
 #Strategy 3
 # Application definition
 
