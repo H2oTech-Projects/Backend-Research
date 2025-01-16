@@ -1,0 +1,42 @@
+*.pyc
+/.venv
+/.myvenv
+.venv/*
+*.log
+*.pot
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+db2.sqlite3
+dump.rdb
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# SQLite database
+db.sqlite3
+
+# Django media and static files
+media/
+static/
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+*.env
+
+# Logs
+*.log
+
+# Translation files
+*.pot
+*.mo
+
+# Editor files
+*.bak
+*.swp
