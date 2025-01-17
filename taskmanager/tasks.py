@@ -12,3 +12,4 @@ def send_email(to_email):
     print(f"Sending email to: {to_email}")
     time.sleep(2)
     return f"Email sent to: {to_email}"
+

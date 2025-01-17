@@ -21,6 +21,6 @@ def send_mail_task(self):
             message = message,
             from_email = settings.EMAIL_HOST_USER,
             recipient_list = [to_email],
-            fail_silently = True,
+            fail_silently = False,
         )
     return "done"

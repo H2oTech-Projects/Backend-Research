@@ -146,8 +146,35 @@ EMAIL_HOST = 'smtp.gmail.com'  # Use the SMTP server for your provider
 EMAIL_PORT = 587               # Typically 587 for TLS
 EMAIL_USE_TLS = True           # Enable TLS (True for most cases)
 EMAIL_HOST_USER = 'kasichhwaindira@gmail.com'  # Replace with your email
-EMAIL_HOST_PASSWORD = 'zvgy lmeq pkqp fmfe' 
+EMAIL_HOST_PASSWORD = 'zjok mnxf qhyo rkpu' 
 DEFAULT_FROM_EMAIL = 'CELERY <kasichhwaindira@gmail.com>'
 
 
 #zvgy lmeq pkqp fmfe
+#zjok mnxf qhyo rkpu
+
+'''LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+        },
+        'celery': {
+            'handlers': ['console'],
+            'level': 'INFO',
+        },
+        'task_process.tasks': {  # Make sure this is correct
+            'handlers': ['console'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+'''
