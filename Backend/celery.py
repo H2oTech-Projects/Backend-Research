@@ -11,7 +11,13 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE','Backend.settings')
 
 app = Celery('Backend')
 app.conf.enable_utc = False
-app.conf.update(timezone ='Asia/Kathmandu')
+app.conf.update(
+    timezone ='Asia/Kathmandu',
+    task_serializer='json',
+    result_serializer='json',
+    accept_content=['json'],
+    result_backend='redis://localhost:6379/0',
+    )
 
 app.config_from_object(settings, namespace='CELERY')
 
