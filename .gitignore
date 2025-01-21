@@ -10,7 +10,7 @@ db.sqlite3
 # Django media and static files
 media/
 /static/
-/migrations/
+Research/migrations/
 
 # Virtual environment
 venv/
