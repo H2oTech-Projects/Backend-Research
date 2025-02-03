@@ -1,19 +1,3 @@
-*.pyc
-/.venv
-/.myvenv
-.venv/*
-__pycache__/
-*.pyo
-db.sqlite3
-media/
-static/
-*.env
-*.log
-*.pot
-*.mo
-*.sqlite3
-*.db
-
 # Python bytecode files
 __pycache__/
 *.pyc
