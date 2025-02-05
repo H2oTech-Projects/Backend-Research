@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Research',
     'rest_framework',
+    'Research',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +80,13 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'Research.utils.custom_exception_handler',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'your_app_name.authentication.CustomAuthentication',
+    ]
 }
 
 
